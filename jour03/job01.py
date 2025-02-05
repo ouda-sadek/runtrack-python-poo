@@ -42,5 +42,5 @@ myrtille.ajouter_population()
 chloe.ajouter_population()
 
 # Displaying the number of inhabitants after adding these people
-print(f"Mise à jour de la population de Paris : {paris.get_habitants()}")
-print(f"Nombre d'habitants de Marseille après : {marseille.get_habitants()}")
+print(f"Nombre d'habitants de Paris après l'arrivée John et Myrtille : {paris.get_habitants()}")
+print(f"Nombre d'habitants de Marseille après l'arrivée de Chloé : {marseille.get_habitants()}")

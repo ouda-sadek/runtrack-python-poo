@@ -40,44 +40,30 @@ class Professeur(Personne):
         return self.__matiereEnseignee
 
 
-# Instantiation of the Person class and the Student class
-personne = Personne()
+# Instantiation of the Student class
 eleve = Eleve()
 
-# Displaying the default student age
-eleve.afficherAge()
-
-"Test all classes and methods"
-# Displaying the person's default age
-personne.afficherAge()
-# Changing the person's age and display it
-personne.modifierAge(20)
-personne.afficherAge()
-
-# Display "Hello" for the personne
-personne.bonjour()
-# Displaying the default student age
-eleve.afficherAge()
-# Changing the person's age and display it
-eleve.modifierAge(15)
-eleve.afficherAge()
 # Display "Hello"
 eleve.bonjour()
 
+# Display "Je vais en cours"
+eleve.allerEnCours()
+
+# Changing the person's age and display it
+eleve.modifierAge(15)
+eleve.afficherAge()
+
+
 # Instantiation of the Professeur class
 professeur = Professeur()
-# Displaying the default professor age
-professeur.afficherAge()
+
 # Changing the professor's age and display it
 professeur.modifierAge(40)
 professeur.afficherAge()
+
 # Display "Hello"
 professeur.bonjour()
-# Display the default professor's subject
-print(f"L'enseignant enseigne la matière {professeur.getMatiereEnseignee()}")
-# Setting a new subject for the professor
-professeur.setMatiereEnseignee("Mathématiques")
-# Display the new professor's subject
-print(f"L'enseignant enseigne la matière {professeur.getMatiereEnseignee()}")
-# Display "Le cours va commencer" for the professor
+
+# Display "Le cours va commencer"
 professeur.enseigner()
+
